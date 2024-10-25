@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindCSS OnlineSandBOX</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/monaco-editor/min/vs/loader.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="bg-gray-100 p-4">
+    <div class="header">
+        <img src="./sources/pnglogo.png" alt="Logo" />
+    </div>
+    <div class="main-container max-w-6xl w-full mx-auto p-6 bg-white rounded-lg shadow-lg">
+        <div class="grid grid-cols-2 gap-6">
+            <div class="flex flex-col">
+                <h2 class="text-xl font-semibold mb-4 text-gray-700">Editor HTML</h2>
+                <div id="editor-container" class="mb-4"></div>
+                    <div class="flex gap-4">
+                    <button id="clearButton" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-6 rounded-lg">
+                        <i class="fas fa-trash"></i> Limpiar
+                    </button>
+                    <button id="copyButton" class=" text-gray-700 font-bold py-2 px-6 rounded-lg">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="flex flex-col">
+                <h2 class="text-xl font-semibold mb-4 text-gray-700">Vista Previa</h2>
+                <div id="preview" class="p-6">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
